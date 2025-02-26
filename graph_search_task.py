@@ -4,7 +4,16 @@
 
 # Note: Available files are: workpiece_graph.json, feature_graph.json
 
-# TODO
+import json
+import networkx as nx
+
+with open('workpiece_graph.json', 'r') as f:
+    workpiece_graph = json.load(f)
+
+with open('feature_graph.json', 'r') as f:
+    feature_graph = json.load(f)
+
+# test push
 
 # ##################################################
 # 2) Create graphs from loaded data
